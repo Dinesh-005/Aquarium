@@ -1,0 +1,86 @@
+{%block content%}
+{% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>WORLD OF AQUARIUM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="C:\Python\Aquarium\AquariumApp\static\aquastyle.css">
+
+body{
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+    
+        <a href="#" class="logo">WORLD OF AQUARIUM<span>.</span></a>
+        
+        <nav class="navbar">
+            <a href="{% url 'home' %}" class="active">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'products' %}">Products</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+        
+    
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+    </header>
+
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Contact</span>Us</h1>
+        <div class="row">
+            <form action="{% url 'contactf' %}" method="POST">
+            {%csrf_token%}
+                <input type="text" placeholder="name" class="box" name="name">
+                <input type="email" placeholder="email" class="box" name="email">
+                <input type="number" placeholder="number" class="box" name="number">
+                <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10" name="message"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+            <div class="image">
+                <img src="C:\Users\MEENA\Desktop\Xplore IT\Web page designing\images\thankyou.jpg">
+            </div>
+        </div>
+    </section>
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">products</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my favorite</a>
+        </div>
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">Coimbatore</a>
+            <a href="#">Tiruppur</a>
+            <a href="#">Salem</a>
+            <a href="#">Chennai</a>
+            <a href="#">Bangalore</a>
+            <a href="#">Erode</a>
+            <a href="#">Madurai</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#">+91 7667812172</a>
+            <a href="#">dineshanandhan512@gmail.com</a>
+            <a href="#">ondiputhur, Coimbatore</a>
+        </div>
+    </div>
+</section>
+}
+{%endblock%}

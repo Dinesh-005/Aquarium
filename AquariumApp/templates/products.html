@@ -1,0 +1,128 @@
+{%block content%}
+{% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>WORLD OF AQUARIUM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="C:\Python\Aquarium\AquariumApp\static\aquastyle.css">
+
+body{
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+    
+        <a href="#" class="logo">WORLD OF AQUARIUM<span>.</span></a>
+        
+        <nav class="navbar">
+            <a href="{% url 'home' %}" class="active">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'products' %}">Products</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+        
+    
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+    </header>
+
+<section class="products" id="products">
+    <h1 class="heading"> New<span>Arrivals</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <span class="Discount">-10%</span>
+            <div class="images">
+            <img src="C:\Users\MEENA\Desktop\Xplore IT\Web page designing\images\goldfish.jpg">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">Add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Gold Fish</h1> 
+            <div class="price">45/-<span>50</span></div>
+        </div>
+
+        <div class="box">
+            <span class="Discount">-10%</span>
+            <div class="images">
+            <img src="C:\Users\MEENA\Desktop\Xplore IT\Web page designing\images\blackgold.jpg">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">Add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Blackgold Fish</h1> 
+            <div class="price">54/-<span>60</span></div>
+        </div>
+
+        <div class="box">
+            <span class="Discount">-10%</span>
+            <div class="images">
+            <img src="C:\Users\MEENA\Desktop\Xplore IT\Web page designing\images\koifish.jpg">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">Add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Koi Fish</h3> Fish</h1> 
+            <div class="price">90/-<span>100</span></div>
+        </div>
+
+
+        <div class="box">
+            <span class="Discount">-10%</span>
+            <div class="images">
+            <img src="C:\Users\MEENA\Desktop\Xplore IT\Web page designing\images\silver shark fish.jpg">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">Add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Silver Shark Fish</h1> 
+            <div class="price">225/-<span>250</span></div>
+        </div>
+
+        <div class="box">
+            <span class="Discount">-10%</span>
+            <div class="images">
+            <img src="C:\Users\MEENA\Desktop\Xplore IT\Web page designing\images\gold arowana.jpg">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">Add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Gold Arowana</h1> 
+            <div class="price">9000/-<span>10000</span></div>
+        </div>
+
+        <div class="box">
+            <span class="Discount">-10%</span>
+            <div class="images">
+            <img src="C:\Users\MEENA\Desktop\Xplore IT\Web page designing\images\silver arowana.jpg">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">Add to cart</a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Silve Arowana</h1> 
+            <div class="price">4500/-<span>5000</span></div>
+        </div>
+    </div>
+</section>
+}
+{%endblock%}

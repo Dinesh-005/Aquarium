@@ -1,0 +1,43 @@
+{%block content%}
+{% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>WORLD OF AQUARIUM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="C:\Python\Aquarium\AquariumApp\static\aquastyle.css">
+
+body{
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+    
+        <a href="#" class="logo">WORLD OF AQUARIUM<span>.</span></a>
+        
+        <nav class="navbar">
+            <a href="{% url 'home' %}" class="active">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'products' %}">Products</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+        
+    
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+    </header>
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>aquarium fishes</h3>
+        <span>Unique collection of Fishes</span>
+        <p>Fishes that are kept in home aquariums, or for aesthetic purposes are considered ornamental fish. 
+            These fishes encompass a wide variety of species, of many shapes, sizes, and colors. 
+            Ornamental fish are usually kept in tanks or other aquarium systems.</p>
+        <a href="#" class="btn">shop now</a>
+    </div>
+</section>
+}
+{%endblock%}
